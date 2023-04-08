@@ -5,27 +5,27 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: 2fr 6fr 2fr;
   grid-template-areas:
-    "top top"
-    "middle middle"
-    "bottom bottom";
+    "header header header"
+    "list-box middle add-item"
+    "footer footer footer";
 }
 
-.top {
-  grid-area: top;
+.header {
+  grid-area: header;
   background-color: aqua;
 }
-.middle {
-  grid-area: middle;
-  background-color: rgb(100, 187, 187);
-}
 .list-box {
-    g;
+  grid-area: list-box;
   background-color: blueviolet;
 }
-.bottom {
-  grid-area: bottom;
+.add-item {
+  grid-area: add-item;
+  background-color: rgb(39, 62, 62);
+}
+.footer {
+  grid-area: footer;
   background-color: rgb(55, 0, 255);
 }
