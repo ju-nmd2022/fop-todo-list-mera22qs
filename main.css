@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(225, 230, 235);
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "top top"
+    "middle middle"
+    "bottom bottom";
+}
+
+.top {
+  grid-area: top;
+  background-color: aqua;
+}
+.middle {
+  grid-area: middle;
+  background-color: rgb(100, 187, 187);
+}
+.list-box {
+    g;
+  background-color: blueviolet;
+}
+.bottom {
+  grid-area: bottom;
+  background-color: rgb(55, 0, 255);
+}
