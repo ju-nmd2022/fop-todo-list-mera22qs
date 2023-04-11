@@ -5,28 +5,72 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  grid-template-rows: 2fr 6fr 2fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 10fr 2fr;
   grid-template-areas:
-    "header header header"
-    "list-box middle add-item"
-    "footer footer footer";
+    "header . . ."
+    "list-box . add-item ."
+    "footer footer footer footer";
 }
 
 .header {
   grid-area: header;
-  background-color: aqua;
+  text-align: center;
+  font-size: larger;
+  color: rgb(183, 109, 123);
 }
 .list-box {
   grid-area: list-box;
-  background-color: blueviolet;
-  border-radius: 20%;
+  background-color: rgb(197, 133, 145);
+  border-radius: 10%;
+}
+h2 {
+  text-align: center;
+  color: rgba(223, 217, 217, 0.745);
+}
+
+h3 {
+  text-align: left;
+  color: rgb(183, 109, 123);
+  font-size: 1.5em;
+  margin-bottom: 1%;
+}
+.paper {
+  grid-area: list-box;
+  height: 80%;
+  width: 80%;
+  margin-left: 10%;
+  background-color: rgba(218, 212, 212, 0.707);
+  border-radius: 20px;
 }
 .add-item {
   grid-area: add-item;
-  background-color: rgb(39, 62, 62);
 }
+#new-item {
+  border-radius: 10px;
+  height: 5%;
+  width: 75%;
+  background-color: rgba(240, 248, 255, 0.888);
+  outline: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+#add {
+  border: none;
+  outline: none;
+  background-color: rgba(197, 133, 145, 0.663);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  border-radius: 20px;
+  padding-bottom: 1%;
+  font-weight: bolder;
+}
+
+#add:hover {
+  cursor: pointer;
+}
+
 .footer {
   grid-area: footer;
-  background-color: rgb(55, 0, 255);
 }
