@@ -71,6 +71,12 @@ h3 {
   cursor: pointer;
 }
 
+p {
+  font-size: 1.2em;
+  padding-top: 5%;
+  padding-left: 20%;
+}
+
 .footer {
   grid-area: footer;
 }

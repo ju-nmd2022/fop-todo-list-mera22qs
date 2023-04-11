@@ -1,29 +1,12 @@
-/*const textIn = document.getElementById("text-insert");
-const addbtn = document.getElementById("add");
-const textOut = document.getElementById("text-out");
+// first 2 lines of code and the 11th line of code is taken from https://youtu.be/aEj0Wu33hJM?list=LL
+let listItem = document.getElementById("new-item");
+let output = document.getElementById("item");
 
-function listItem() {
-  textOut.innerHTML = textIn.value;
+// add button
+let addBtn = document.getElementById("add");
+
+addBtn.onclick = addToList;
+
+function addToList() {
+  output.innerHTML = listItem.value;
 }
-
-addbtn.addEventListener("click", listItem);*/
-
-const form = document.getElementById("todo-input");
-const taskInput = document.getElementById("task-input");
-
-//array 
-
-let todos = [];
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  
-  saveTodo();
-});
-
-function saveTodo(){
-  const todoValue = taskInput.value
-
-  const todo 
-}
-
