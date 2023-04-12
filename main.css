@@ -69,6 +69,7 @@ h3 {
 
 #add:hover {
   cursor: pointer;
+  background-color: rgb(197, 133, 145);
 }
 
 p {
