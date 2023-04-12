@@ -9,6 +9,9 @@ let listItem = document.getElementById("new-item");
 // add button
 let addBtn = document.getElementById("add");
 
+// box that is unchecked, shown next to uncompleted tasks
+let finnishbtn = getElementById("unchecked");
+
 addBtn.onclick = addToList;
 
 function addToList() {
@@ -16,7 +19,7 @@ function addToList() {
   par.innerText = listItem.value;
   bucketList.appendChild(par);
 
-  // remove button
+  // remove by clicking on the text
   par.addEventListener("click", function () {
     par.style.textDecoration;
     bucketList.removeChild(par);
