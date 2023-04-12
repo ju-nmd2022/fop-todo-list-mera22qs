@@ -77,6 +77,12 @@ p {
   padding-left: 20%;
 }
 
+p:hover {
+  background-color: rgba(218, 212, 212, 0.79);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 .footer {
   grid-area: footer;
 }
