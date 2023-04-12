@@ -9,8 +9,8 @@ let listItem = document.getElementById("new-item");
 // add button
 let addBtn = document.getElementById("add");
 
-// box that is unchecked, shown next to uncompleted tasks
-let finnishbtn = getElementById("unchecked");
+// // box that is unchecked, shown next to uncompleted tasks
+// let finnishbtn = getElementById("unchecked");
 
 addBtn.onclick = addToList;
 
