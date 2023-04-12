@@ -1,6 +1,10 @@
-// first 2 lines of code and the 11th line of code is taken from https://youtu.be/aEj0Wu33hJM?list=LL
+// all lines of code was created with the help of https://youtu.be/-pRg_daFjfk by CodeDuck, aswell as the tutorial videos by Garrit
+
+// The container that will show the user-input
+let bucketList = document.getElementById("paper");
+
+// the input field
 let listItem = document.getElementById("new-item");
-let output = document.getElementById("item");
 
 // add button
 let addBtn = document.getElementById("add");
@@ -8,5 +12,7 @@ let addBtn = document.getElementById("add");
 addBtn.onclick = addToList;
 
 function addToList() {
-  output.innerHTML = listItem.value;
+  let par = document.createElement("p");
+  par.innerText = listItem.value;
+  bucketList.appendChild(par);
 }
