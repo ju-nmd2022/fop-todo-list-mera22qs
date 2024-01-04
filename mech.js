@@ -9,20 +9,24 @@ let listItem = document.getElementById("new-item");
 // add button
 let addBtn = document.getElementById("add");
 
-// // box that is unchecked, shown next to uncompleted tasks
-// let finnishbtn = getElementById("unchecked");
+// box that is unchecked, shown next to uncompleted tasks
+let finnishbtn = document.getElementById("unchecked");
 
 addBtn.onclick = addToList;
-// add bulletpoints into the list 
 
+// add bulletpoints into the list 
 function addToList() {
   let par = document.createElement("p");
   par.innerText = listItem.value;
   bucketList.appendChild(par);
 
-  // remove by clicking on the text
+  // add a line when the task is done
   par.addEventListener("click", function () {
     par.style.textDecoration = "line-through";
-    //bucketList.removeChild(par);
+    // bucketList.removeChild(par);
+  });
+
+  par.addEventListener("dblclick", function () {
+    bucketList.removeChild(par);
   });
 }
