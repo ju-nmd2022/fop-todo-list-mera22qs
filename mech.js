@@ -13,6 +13,7 @@ let addBtn = document.getElementById("add");
 // let finnishbtn = getElementById("unchecked");
 
 addBtn.onclick = addToList;
+// add bulletpoints into the list 
 
 function addToList() {
   let par = document.createElement("p");
@@ -21,7 +22,7 @@ function addToList() {
 
   // remove by clicking on the text
   par.addEventListener("click", function () {
-    par.style.textDecoration;
-    bucketList.removeChild(par);
+    par.style.textDecoration = "line-through";
+    //bucketList.removeChild(par);
   });
 }
