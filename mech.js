@@ -14,10 +14,10 @@ addBtn.onclick = addToList;
 
 // add bulletpoints into the list 
 function addToList() {
-  let par = document.createElement("p");
-  par.innerText = listItem.value;
+  addBtn.addEventListener('click', function(){ 
+  let par = document.createElement('p');
   bucketList.appendChild(par);
-
+})
   //With the help of chat gtp, the inputs of the to-fo lists are converted into keys so they can be stored in local storage. 
   // save to local storage with a consistent key format
   localStorage.setItem("task_" + par.innerText, par.innerText);
