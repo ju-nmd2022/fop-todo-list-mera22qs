@@ -5,10 +5,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #c39dcc;
+  background: rgba(250, 235, 215, 0.565);
   border-radius: 30px;
   padding-left: 20px;
   margin-bottom: 25px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem;
+  font-size: medium;
 }
 
 .to-do {
