@@ -1,3 +1,6 @@
+body {
+  background-image: url(autumn.jpg);
+}
 .input-task {
   display: flex;
   align-items: center;
@@ -6,6 +9,18 @@
   border-radius: 30px;
   padding-left: 20px;
   margin-bottom: 25px;
+}
+
+.to-do {
+  width: 100%;
+  max-width: 25rem;
+  background: #d26a25cd;
+  margin: 20rem auto 1rem;
+  padding: 2rem 5rem 10rem;
+  border-radius: 2rem;
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: antiquewhite;
 }
 
 /* body {
