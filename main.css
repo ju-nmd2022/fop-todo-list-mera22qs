@@ -1,6 +1,19 @@
 body {
   background-image: url(autumn.jpg);
 }
+
+.to-do {
+  width: 100%;
+  max-width: 25rem;
+  background: #d26a25cd;
+  margin: 20rem auto 1rem;
+  padding: 2rem 5rem 10rem;
+  border-radius: 2rem;
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: antiquewhite;
+}
+
 .input-task {
   display: flex;
   align-items: center;
@@ -19,12 +32,16 @@ input {
   font-size: medium;
 }
 
-.to-do {
-  width: 100%;
-  max-width: 25rem;
-  background: #d26a25cd;
-  margin: 20rem auto 1rem;
-  padding: 2rem 5rem 10rem;
+button {
+  border-color: ;
+  outline: none;
+  padding: 1rem;
+  background: #a1501af4;
+  color: antiquewhite;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  border-radius: 50%;
   border-radius: 2rem;
   border-style: solid;
   border-width: 0.2em;
