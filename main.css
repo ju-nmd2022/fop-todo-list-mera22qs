@@ -23,6 +23,13 @@ body {
   border-color: antiquewhite;
 }
 
+h1 {
+  color: antiquewhite;
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+}
+
 /* body {
   background-color: rgb(225, 230, 235);
   height: 100vh;
