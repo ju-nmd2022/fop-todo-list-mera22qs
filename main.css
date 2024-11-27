@@ -1,4 +1,14 @@
-body {
+.input-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #c39dcc;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+/* body {
   background-color: rgb(225, 230, 235);
   height: 100vh;
 }
@@ -88,4 +98,4 @@ p:hover {
 
 .footer {
   grid-area: footer;
-}
+} */
