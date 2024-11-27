@@ -7,24 +7,20 @@
     <title>To-do list</title>
     <link rel="stylesheet" href="main.css" />
   </head>
-
   <body>
-    <div class="grid">
-      <div class="header">
-        <h1>To-do List</h1>
+    <header></header>
+    <main class="container">
+      <div class="to-do">
+        <h1>To Do List</h1>
+        <div class="input-task">
+          <input
+            type="text"
+            id="input-box"
+            placeholder="Write your goal here!"
+          />
+        </div>
       </div>
-      <div class="list-box">
-        <h2>Goals for today</h2>
-        <div id="paper" class="paper"></div>
-      </div>
-      <div class="add-item">
-        <h3>Add a new goal</h3>
-        <input id="input" type="text" placeholder="text" />
-        <button id="add">➕</button>
-        <div class="tasks" id="taskstore"></div>
-      </div>
-      <div class="footer"></div>
-    </div>
-    <script src="mech.js"></script>
+    </main>
+    <script src="index.js"></script>
   </body>
 </html>
