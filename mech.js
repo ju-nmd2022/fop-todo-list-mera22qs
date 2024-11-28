@@ -17,6 +17,22 @@ function addTask() {
   saveData();
 }
 
+//remove and add task
+
+listContainer.addEventListener(
+  "click",
+  function (e) {
+    if (e.target.tagName === "LI") {
+      e.target.classList.toggle("check");
+      saveData();
+    } else if (e.target.tagName === "SPAN") {
+      e.target.parentElement.remove();
+      saveData();
+    }
+  },
+  false
+);
+
 //The code was created with the help of videos provided by Garrit Schaap and https://www.youtube.com/watch?v=-pRg_daFjfk&t=47s by CodeDuc. ChatGTP was also used to correct errors.
 
 // // The container that will show the user-input
