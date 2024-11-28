@@ -88,6 +88,23 @@ ul li.check::before {
   background-image: url(img/check.png);
 }
 
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #4e085f;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 25%;
+}
+
+ul li span:hover {
+  background: #b0c6d9;
+}
+
 /* body {
   background-color: rgb(225, 230, 235);
   height: 100vh;
