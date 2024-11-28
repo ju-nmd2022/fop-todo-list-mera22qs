@@ -33,6 +33,16 @@ listContainer.addEventListener(
   false
 );
 
+//local storage
+function saveData() {
+  localStorage.setItem("data", listContainer.innerHTML);
+}
+
+function showTask() {
+  listContainer.innerHTML = localStorage.getItem("data");
+}
+showTask();
+
 //The code was created with the help of videos provided by Garrit Schaap and https://www.youtube.com/watch?v=-pRg_daFjfk&t=47s by CodeDuc. ChatGTP was also used to correct errors.
 
 // // The container that will show the user-input
