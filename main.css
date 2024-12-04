@@ -20,8 +20,8 @@ body {
   justify-content: space-between;
   background: rgba(250, 235, 215, 0.565);
   border-radius: 30px;
-  padding-left: 20px;
-  margin-bottom: 25px;
+  padding-left: 3rem;
+  margin-left: 3rem;
 }
 input {
   flex: 1;
