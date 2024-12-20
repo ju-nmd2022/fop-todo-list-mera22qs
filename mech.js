@@ -1,3 +1,11 @@
+*****************************************************************************/
+*    Title: How To Create To-Do List App Using HTML CSS And JavaScript | Task App In JavaScript
+*    Author: GreatStack
+*    Date: 2023 
+*    Code version: 2.0
+*    Availability: https://www.youtube.com/watch?v=G0jO8kUrg-I&list=LL&index=4&t=1s
+****************************************************************************/
+
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
@@ -42,40 +50,3 @@ function showTask() {
   listContainer.innerHTML = localStorage.getItem("data");
 }
 showTask();
-
-//The code was created with the help of videos provided by Garrit Schaap and https://www.youtube.com/watch?v=-pRg_daFjfk&t=47s by CodeDuc. ChatGTP was also used to correct errors.
-
-// // The container that will show the user-input
-// let bucketList = document.getElementById("paper");
-
-// // the input field
-// let listItem = document.getElementById("new-item");
-
-// // add button
-// let addBtn = document.getElementById("add");
-
-// addBtn.onclick = addToList;
-
-// // add bulletpoints into the list
-// function addToList() {
-//   addBtn.addEventListener('click', function(){
-//   let par = document.createElement('p');
-//   bucketList.appendChild(par);
-// })
-//   //With the help of chat gtp, the inputs of the to-fo lists are converted into keys so they can be stored in local storage.
-//   // save to local storage with a consistent key format
-//   localStorage.setItem("task_" + par.innerText, par.innerText);
-
-//   // add a line when the task is done
-//   par.addEventListener("click", function () {
-//     par.style.textDecoration = "line-through";
-
-//   });
-
-//   par.addEventListener("dblclick", function () {
-//     bucketList.removeChild(par);
-
-//  //With the help of chat gtp, the inputs of the to-fo lists are converted into keys so they can be removed from local storage.
-//     localStorage.removeItem("task_" + par.innerText);
-//   });
-// }
