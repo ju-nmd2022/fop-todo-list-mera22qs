@@ -1,0 +1,206 @@
+/* *****************************************************************************/
+/* *    Title: How To Create To-Do List App Using HTML CSS And JavaScript | Task App In JavaScript
+*    Author: GreatStack
+*    Date: 2023 
+*    Code version: 2.0
+*    Availability: https://www.youtube.com/watch?v=G0jO8kUrg-I&list=LL&index=4&t=1s
+****************************************************************************/
+
+body {
+  background-image: url(autumn.jpg);
+}
+
+.to-do {
+  width: 100%;
+  max-width: 25rem;
+  background: #d26a25cd;
+  margin: 20rem auto 1rem;
+  padding: 2rem 5rem 10rem;
+  border-radius: 2rem;
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: antiquewhite;
+}
+
+.input-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(250, 235, 215, 0.565);
+  border-radius: 30px;
+  padding-left: 3rem;
+  margin-left: 3rem;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem;
+  font-size: medium;
+}
+
+button {
+  border-color: ;
+  outline: none;
+  padding: 1rem;
+  background: #a1501af4;
+  color: antiquewhite;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  border-radius: 50%;
+  border-radius: 2rem;
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: antiquewhite;
+}
+
+h1 {
+  color: antiquewhite;
+  font-size: xx-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  font-size: x-large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  color: antiquewhite;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 20%;
+  background-image: url(img/home.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+ul li.check {
+  color: rgba(12, 13, 13, 0.524);
+  text-decoration: line-through;
+}
+
+ul li.check::before {
+  background-image: url(img/check.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #4e085f;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 25%;
+}
+
+ul li span:hover {
+  background: #b0c6d9;
+}
+
+/* body {
+  background-color: rgb(225, 230, 235);
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 10fr 2fr;
+  grid-template-areas:
+    "header . . ."
+    "list-box . add-item ."
+    "footer footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  font-size: larger;
+  color: rgb(183, 109, 123);
+}
+.list-box {
+  grid-area: list-box;
+  background-color: rgb(197, 133, 145);
+  border-radius: 10%;
+}
+h2 {
+  text-align: center;
+  color: rgba(223, 217, 217, 0.745);
+}
+
+h3 {
+  text-align: left;
+  color: rgb(183, 109, 123);
+  font-size: 1.5em;
+  margin-bottom: 1%;
+}
+.paper {
+  grid-area: list-box;
+  height: 80%;
+  width: 80%;
+  margin-left: 10%;
+  background-color: rgba(218, 212, 212, 0.707);
+  border-radius: 20px;
+}
+.add-item {
+  grid-area: add-item;
+}
+#new-item {
+  border-radius: 10px;
+  height: 5%;
+  width: 75%;
+  background-color: rgba(240, 248, 255, 0.888);
+  outline: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+  color: black;
+}
+
+#add {
+  border: none;
+  outline: none;
+  background-color: rgba(197, 133, 145, 0.663);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  border-radius: 20px;
+  padding-bottom: 1%;
+  font-weight: bolder;
+}
+
+#add:hover {
+  cursor: pointer;
+  background-color: rgb(197, 133, 145);
+}
+
+p {
+  font-size: 1.2em;
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-bottom: 5%;
+}
+
+p:hover {
+  background-color: rgba(218, 212, 212, 0.79);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  grid-area: footer;
+} */
